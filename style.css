@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container form {
+    margin: 0 20px; 
+}
+
+.button-container button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #952323; 
+}
+
+.button-container .ganjil {
+    background-color: #A1CCD1;
+    margin-bottom: 2rem; 
+}
+
+.button-container .genap {
+    background-color: #E9B384; 
+    margin-bottom: 2rem;
+}

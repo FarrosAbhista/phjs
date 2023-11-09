@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL 4</title>
+</head>
+<body>
+    <h2>KELILING JAJARGENJANG</h2>
+    
+    <label for="sisiA">Input Sisi A:</label>
+    <input type="number" id="sisiA" placeholder="Masukkan Sisi A" />
+
+    <label for="sisiB">Input Sisi B:</label>
+    <input type="number" id="sisiB" placeholder="Masukkan Sisi B" />
+
+    <button onclick="hitungKeliling()">Hitung Keliling</button>
+
+    <p id="result"></p>
+
+    <script>
+        function hitungKeliling() {
+            const sisiA = parseFloat(document.getElementById('sisiA').value);
+            const sisiB = parseFloat(document.getElementById('sisiB').value);
+
+            if (!isNaN(sisiA) && !isNaN(sisiB)) {
+                const keliling = 2 * (sisiA + sisiB);
+
+                document.getElementById('result').innerHTML = `Keliling Jajar Genjang: ${keliling}`;
+            } else {
+                document.getElementById('result').innerHTML = 'Masukkan angka yang valid untuk sisi A dan sisi B.';
+            }
+        }
+    </script>
+</body>
+</html>

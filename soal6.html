@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL 6</title>
+</head>
+<body>
+    <h2>CARI TAHU FITUR RAM DAN KAMERA DARI POCO M3!</h2>
+    
+    <label for="inputText">MAU TAHU APA?</label>
+    <input type="text" id="inputText" placeholder="Masukkan Fitur" />
+
+    <button onclick="displayFeature()">Tampilkan Fitur</button>
+
+    <p id="output"></p>
+
+    <script>
+        function displayFeature() {
+            const inputFeature = document.getElementById('inputText').value.toLowerCase();
+
+            switch (inputFeature) {
+                case '10mp':
+                    document.getElementById('output').innerHTML = 'Fitur Kamera: 10MP';
+                    break;
+                case '128gb':
+                    document.getElementById('output').innerHTML = 'Fitur Memori: 128GB';
+                    break;
+                default:
+                    document.getElementById('output').innerHTML = 'Fitur tidak dikenali. Masukkan 10MP untuk kamera atau 128GB untuk memori.';
+            }
+        }
+    </script>
+</body>
+</html>
